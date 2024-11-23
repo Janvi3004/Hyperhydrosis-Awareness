@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Journal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="journal.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Interactive Journal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="journal.html">Journal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Log Your Experiences</h2>
+            <p>Keeping a journal can help you track emotional triggers and identify patterns in your symptoms.</p>
+            <form id="journal-form">
+                <textarea id="journal-entry" placeholder="How was your day? Share your thoughts here..."
+                    required></textarea>
+                <button type="submit">Save Entry</button>
+            </form>
+        </section>
+        <section id="journal-entries">
+            <h2>Your Journal Entries</h2>
+            <ul id="entries-list">
+                <!-- Entries will dynamically load here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hyperhidrosis Awareness. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

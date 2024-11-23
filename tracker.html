@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tracker.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Symptom Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tracker.html">Symptom Tracker</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Track Your Symptoms</h2>
+            <p>Use this tracker to log daily symptoms and monitor patterns over time.</p>
+            <form id="tracker-form">
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                <label for="severity">Sweating Severity (1-10):</label>
+                <input type="number" id="severity" min="1" max="10" required>
+                <label for="triggers">Triggers (optional):</label>
+                <input type="text" id="triggers" placeholder="e.g., heat, stress">
+                <button type="submit">Log Symptom</button>
+            </form>
+        </section>
+        <section id="tracker-data">
+            <h2>Logged Symptoms</h2>
+            <ul id="symptom-list">
+                <!-- Symptoms will dynamically load here -->
+            </ul>
+            <h2>Graphical Overview</h2>
+            <div id="graph">
+                <!-- Placeholder for graph visualization -->
+                <p>Graph will display here (connect to a library like Chart.js).</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hyperhidrosis Awareness. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

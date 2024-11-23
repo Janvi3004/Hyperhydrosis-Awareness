@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="forum.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Community Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="forum.html">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Join the Conversation</h2>
+            <p>Share your experiences, ask questions, and support each other.</p>
+            <form id="forum-form">
+                <textarea id="post-content" placeholder="Write your post here..." required></textarea>
+                <button type="submit">Submit Post</button>
+            </form>
+        </section>
+        <section id="forum-posts">
+            <h2>Community Posts</h2>
+            <ul id="post-list">
+                <!-- Posts will dynamically load here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hyperhidrosis Awareness. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

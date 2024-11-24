@@ -1,122 +1,161 @@
-/* General Reset */
-* {
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    line-height: 1.6;
-    background-color: #f9f9f9;
     color: #333;
+    background-color: #f9f9f9;
 }
 
-/* Header */
 header {
-    background-color: #005f73;
+    background-color: #ffffff;
     color: white;
-    padding: 1rem 2rem;
     text-align: center;
+    padding: 30px 20px;
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    margin: 0;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 1rem;
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
 }
 
-nav ul li {
-    margin: 0 10px;
+/* Intro Section with Background Image */
+.intro-section {
+    background-image: url('hyperhidrosis-awareness-bg.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; /* Adjust padding for spacing */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    border-radius: 10px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border: 2px solid transparent;
-    transition: all 0.3s ease-in-out;
+.intro-section h1 {
+    font-size: 3rem; /* Adjust font size */
+    margin-bottom: 20px;
 }
 
-nav ul li a:hover {
-    border: 2px solid white;
-    background-color: #fff;
-    color: #005f73;
-    border-radius: 5px;
+.intro-section p {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 20px;
+}
+/* Unordered List Styling */
+ul.nav-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Horizontally align items */
+    gap: 20px; /* Space between list items */
+    justify-content: center; /* Center align the list items horizontally */
+    align-items: center; /* Vertically center items if needed */
 }
 
-/* Footer */
-footer {
+/* List Item Styling */
+ul.nav-list li {
+    display: inline; /* Display items inline */
+}
+
+/* Link Styling */
+ul.nav-list li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Set the link color */
+    font-size: 1.1rem; /* Adjust font size */
+    font-weight: bold; /* Make the links bold */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover State for Links */
+ul.nav-list li a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+/* Feature Section Styling */
+.feature-section {
+    position: relative;
+    padding: 50px 20px;
+    color: #02594f;
     text-align: center;
-    background-color: #005f73;
-    color: white;
-    padding: 1rem;
-    margin-top: 2rem;
+    margin-bottom: 20px;
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Main Content */
-main {
-    padding: 2rem;
+.feature-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-section {
-    margin-bottom: 2rem;
+.feature-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-h2 {
-    color: #007f91;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #007f91;
+.feature-section .button {
     display: inline-block;
-}
-
-/* Buttons */
-button, .btn {
-    background-color: #007f91;
+    padding: 10px 20px;
+    background-color: #FF5733;
     color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-button:hover, .btn:hover {
-    background-color: #005f73;
-    transform: scale(1.05);
-}
-
-/* Forms */
-form {
-    margin: 1rem 0;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    text-decoration: none;
     font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-textarea {
-    height: 100px;
+.feature-section .button:hover {
+    background-color: #C70039;
 }
 
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.5rem;
+
+/* Background Images for Each Section */
+.tracker-section {
+    background-image: url('tracker-background.jpg');
 }
+
+.journal-section {
+    background-image: url('journal-background.jpg');
+}
+
+.community-section {
+    background-image: url('community-background.jpg');
+}
+
+.chatbot-section {
+    background-image: url('chatbot-background.jpg');
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .feature-section h2 {
+        font-size: 2rem;
+    }
+
+    .feature-section p {
+        font-size: 1rem;
+    }
+
+    .feature-section .button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
 
 /* Feature Cards */
 .feature-card {
@@ -155,6 +194,121 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+}
+
+/* Header Styling */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+}
+
+/* Section Styling */
+.symptoms-section, .impact-section, .visual-guide {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Symptoms List Styling */
+.symptoms-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.symptom {
+    background-color: #ffe6e6;
+    border: 1px solid #ffcccc;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.symptom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.symptom h3 {
+    color: #ff5733;
+    font-size: 1.5rem;
+}
+
+.symptom p {
+    color: #333;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Image Styling */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
+}
+
 /* Journal Entries */
 #entries-list li {
     background: #f0f7f9;
@@ -191,6 +345,8 @@ ul li {
     align-items: center;
 }
 
+
+
 /* Forum Posts */
 #post-list li {
     background: #f0f7f9;
@@ -218,3 +374,5 @@ ul li {
     color: #777;
     font-size: 1rem;
 }
+
+
